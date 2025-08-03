@@ -67,6 +67,11 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-brands:github",
 			url: "https://github.com/buuuMax",
 		},
+                {
+                        name: 'B站',
+                        icon: 'fa6-brands:bilibili',
+                        url: 'https://space.bilibili.com/512835879',
+                }
 	],
 };
 
