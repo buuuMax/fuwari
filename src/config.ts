@@ -9,7 +9,7 @@ import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
 	title: "MisakiUsasa250",
-	subtitle: "250",
+	subtitle: "330",
 	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th', 'vi'
 	themeColor: {
 		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -54,8 +54,8 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/demo-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "MisakiUsasa250",
-	bio: "青春猪头少年不会梦见兔女郎学姐",
+	name: "灵梦の赛钱箱",
+	bio: " 灵偃蹇兮姣服，芳菲菲兮满堂",
 	links: [
 		{
 			name: "Steam",
