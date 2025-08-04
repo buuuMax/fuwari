@@ -1,51 +1,29 @@
 ---
-title: Simple Guides for Fuwari
-published: 2024-04-01
-description: "How to use this blog template."
+title: Fuwari初体验
+published: 2025-08-02
+description: 基于Astro的Vista吗，有点意思
 image: "./cover.jpeg"
 tags: ["Fuwari", "Blogging", "Customization"]
-category: Guides
+category: 絮絮叨叨
 draft: false
 ---
 
-> Cover image source: [Source](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/208fc754-890d-4adb-9753-2c963332675d/width=2048/01651-1456859105-(colour_1.5),girl,_Blue,yellow,green,cyan,purple,red,pink,_best,8k,UHD,masterpiece,male%20focus,%201boy,gloves,%20ponytail,%20long%20hair,.jpeg)
+> 先说结论 个人认为Fuwari虽然在某些地方比不过原来的vista（如评论功能），但是总体而言Fuwari的美观性与兼容性还是会比基于Hexo的vista要好
 
-This blog template is built with [Astro](https://astro.build/). For the things that are not mentioned in this guide, you may find the answers in the [Astro Docs](https://docs.astro.build/).
+  最近脑袋一热，想着弄个博客玩玩，之前有幸体验过hexo，并且也小运营过一段时间的网站。所以本来应该是继续选择Hexo得qwq，但是去hexo官方网站一看，大部分的主题甚至官方版本都很久没有更新了，故选择astro平台，没想到原来在hexo就很火的vista也迁移到astro了，干脆直接用来玩玩看
 
-## Front-matter of Posts
+  
 
-```yaml
----
-title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
-image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
-draft: false
----
-```
+  安装过程稍微比hexo难一丢丢，不过总体来说还是很好安装的，唯一让我觉得膈应的就是astro本身并不支持多主题快速切换，想要一个主题就必须重新安装astro到另一目录，而hexo本身支持多主题和快速切换，想要哪个就在config下的theme栏换一个就行了。。但这都无伤大雅，体验好才是最重要的嗯对
 
-| Attribute     | Description                                                                                                                                                                                                 |
-|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `title`       | The title of the post.                                                                                                                                                                                      |
-| `published`   | The date the post was published.                                                                                                                                                                            |
-| `description` | A short description of the post. Displayed on index page.                                                                                                                                                   |
-| `image`       | The cover image path of the post.<br/>1. Start with `http://` or `https://`: Use web image<br/>2. Start with `/`: For image in `public` dir<br/>3. With none of the prefixes: Relative to the markdown file |
-| `tags`        | The tags of the post.                                                                                                                                                                                       |
-| `category`    | The category of the post.                                                                                                                                                                                   |
-| `draft`        | If this post is still a draft, which won't be displayed.                                                                                                                                                    |
+  
 
-## Where to Place the Post Files
+  安装速度比我想象中得到要快，异常的顺利，依赖和拓展啥的也可以完美适配，这让非酋体质的我很诧异，试了试dev，动画啥的都还挺流畅，就好比之前用过的WordPress多多少少都有啥兼容性问题，要不然就是对某些东西要求太高要不然就是某些文件直接暴毙了，有些时候有的bug我自己都会绷不住，Hexo本身也够老了，部分主题东西太多太杂，资源浪费严重，啥东西都摆一块，特别不美观。那这astro的体验就真的很不错了
 
 
 
-Your post files should be placed in `src/content/posts/` directory. You can also create sub-directories to better organize your posts and assets.
+  部署到云端，还试了试手机网页，发现这东西对手机也进行了适配，也就是说不用二次适配了，瞬间舒服了awa
 
-```
-src/content/posts/
-├── post-1.md
-└── post-2/
-    ├── cover.png
-    └── index.md
-```
+
+
+  不出意外的话这个网站我还会无偿运行个一俩年的，就目前而言这个博客平台的的确确能够支撑我再折腾ta个几年
