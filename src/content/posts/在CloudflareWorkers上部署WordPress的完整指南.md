@@ -1,5 +1,5 @@
 ---
-title: 在Cloud flare Workers上部署WordPress的完整指南
+title: 在cloudflare Workers上部署WordPress的完整指南
 published: 2025-08-06
 Updated: 2025-08-06 1:17:24
 description: ''
@@ -55,17 +55,17 @@ addEventListener('fetch', event => {
 async function handleRequest(request) {
   // 替换为你的 WordPress 源站 URL
   const originUrl = 'https://your-wordpress-site.com'
-  
+
   // 获取请求 URL
   const url = new URL(request.url)
-  
+
   // 构建目标 URL
   const targetUrl = new URL(url.pathname + url.search, originUrl)
-  
+
   // 复制原始请求头
   const headers = new Headers(request.headers)
   headers.set('Host', targetUrl.hostname)
-  
+
   // 转发请求到 WordPress 源站
   const response = await fetch(targetUrl.toString(), {
     method: request.method,
@@ -73,7 +73,7 @@ async function handleRequest(request) {
     body: request.body,
     redirect: 'follow'
   })
-  
+
   // 返回响应
   return response
 }
@@ -137,7 +137,7 @@ if (!response) {
     body: request.body,
     redirect: 'follow'
   })
-  
+
   // 只缓存 GET 请求和成功响应
   if (request.method === 'GET' && response.status === 200) {
     const cacheResponse = response.clone()
@@ -148,7 +148,6 @@ if (!response) {
 }
 
 return response
-
 ```
 
 ## 无头 WordPress 方案（高级）
@@ -177,12 +176,12 @@ addEventListener('fetch', event => {
 async function handleRequest(request) {
   const API_URL = 'https://your-wordpress-site.com/wp-json/wp/v2'
   const { pathname } = new URL(request.url)
-  
+
   // 示例：获取最新文章
   if (pathname === '/posts') {
     const response = await fetch(`${API_URL}/posts?_embed`)
     const posts = await response.json()
-    
+
     // 构建前端页面
     const html = `
       <!DOCTYPE html>
@@ -201,12 +200,12 @@ async function handleRequest(request) {
       </body>
       </html>
     `
-    
+
     return new Response(html, {
       headers: { 'Content-Type': 'text/html' }
     })
   }
-  
+
   // 处理其他路由...
 }
 ```
