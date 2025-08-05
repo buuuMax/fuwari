@@ -1,6 +1,7 @@
 ---
 title: 在阿里云ECS服务器上手动部署WordPress[TEST]
 published: 2025-08-04
+updated: 2025-08-04 20:26:22
 description: ''
 image: './334b37a8c6b89a6b9c5d2544c445d34d.jpg'
 tags: [guide]
@@ -187,8 +188,6 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
-
-
 ---
 
 ## 5. 安装PHP环境
@@ -222,8 +221,6 @@ upload_max_filesize = 64M
 post_max_size = 64M
 max_execution_time = 300
 ```
-
-
 
 ### 5.3 重启Apache
 

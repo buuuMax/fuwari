@@ -1,6 +1,7 @@
 ---
 title: Fuwari初体验
 published: 2025-08-02
+updated: 2025-08-04 19:34:44
 description: 基于Astro的Vista吗，有点意思
 image: "./cover.jpeg"
 tags: ["Fuwari", "Blogging", "Customization"]

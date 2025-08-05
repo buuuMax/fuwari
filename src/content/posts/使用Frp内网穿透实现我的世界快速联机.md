@@ -1,6 +1,7 @@
 ---
 title: 使用Frp内网穿透实现我的世界快速联机
-published: 2025-08-05
+published: 2025-08-04
+updated: 2025-08-04 13:59:09
 description: '以LoCyanFrp为例'
 image: './0b6741eb3b25a326c5ab4f65f25d4684.jpg'
 tags: [guide]
