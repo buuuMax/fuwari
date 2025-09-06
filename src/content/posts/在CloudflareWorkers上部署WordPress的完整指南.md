@@ -1,7 +1,7 @@
 ---
 title: 在cloudflare Workers上部署WordPress的完整指南
 published: 2025-08-06
-Updated: 2025-08-06 1:17:24
+updated: 2025-08-06 1:17:24
 description: ''
 image: './IMG_20250302_114646.jpg'
 tags: [guide]
